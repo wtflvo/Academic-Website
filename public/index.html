@@ -1,43 +1,827 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta
+			name="description"
+			content="Web site created using create-react-app"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<link rel="stylesheet" href="/src/styles.css" />
+		 
+		<script src="src\index.js"></script>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+		<title>Academic Website</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-transparent">
+			<a id="home" class="navbar-brand" href="#">
+				<img src="logo.PNG" alt="logo" />EDUCATION</a
+			>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link active" aria-current="page" href="#home">Home</a>
+					</li>
+					<li class="navbar-item">
+						<a class="nav-link active" href="#education">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#courses">Courses</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#teachers">Teachers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#programs">Programs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div
+			id="carouselExampleSlidesOnly"
+			class="carousel slide"
+			data-bs-ride="carousel"
+		>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="cat2.png" class="d-block w-100" alt="..." />
+					<div class="carousel-caption d-md-block">
+						<h1>Start your education with our cat-team!</h1>
+					</div>
+				</div>
+
+				<div class="carousel-item" data-bs-interval="5000">
+					<img src="cat1.png" class="d-block w-100" alt="..." />
+				</div>
+
+				<div class="carousel-item" data-bs-interval="5000">
+					<img src="cat3.png" class="d-block w-100" alt="..." />
+				</div>
+			</div>
+		</div>
+
+		<div id="education" class="education-container">
+			<div class="row my-auto">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+					<div class="image-container">
+						<img src="Path3.png" class="education-image" alt="photo" />
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+					<div class="education-info-container">
+						<div class="education-header-container">
+							<h1 class="education-header">Education</h1>
+						</div>
+						<div class="eduacation-p">
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting
+								industry. Lorem Ipsum has been the industry's standard dummy
+								text ever since the 1500s, when an unknown printer took a galley
+								of type and scrambled it to make a type specimen book.
+							</p>
+						</div>
+
+						<div class="possibilities-container">
+							<div class="row">
+								<div class="col-1 my-auto">
+									<div class="possibility-icon-container">
+										<img
+											src="icon_1.png"
+											class="possibility-icon"
+											alt="icon_1"
+										/>
+									</div>
+								</div>
+
+								<div class="col-10 my-auto">
+									<div class="possibility-text-container">
+										<h5 class="possibility-text">Learn anything</h5>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1 my-auto">
+									<div class="possibility-icon-container">
+										<img
+											src="icon_2.png"
+											class="possibility-icon"
+											alt="icon_1"
+										/>
+									</div>
+								</div>
+
+								<div class="col-10 my-auto">
+									<div class="possibility-text-container">
+										<h5 class="possibility-text">Talk to our instructors</h5>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1 my-auto">
+									<div class="possibility-icon-container">
+										<img
+											src="icon_3.png"
+											class="possibility-icon"
+											alt="icon_1"
+										/>
+									</div>
+								</div>
+
+								<div class="col-10 my-auto">
+									<div class="possibility-text-container">
+										<h5 class="possibility-text">Speak with others</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="features-container">
+			<div class="features-header">
+				<h1>Features</h1>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="feature-name">
+						<img src="on.png" class="feature-image" alt="test" />
+						<h3>Online Testing</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+							praesentium corrupti illum sint quas, rerum veritatis dolor minima
+							delectus maiores tenetur vero at
+						</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="feature-name">
+						<img src="ex.png" class="feature-image" alt="test" />
+						<h3>Professional Teachers</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+							praesentium corrupti illum sint quas, rerum veritatis dolor minima
+							delectus maiores tenetur vero at
+						</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="feature-name">
+						<div class="feature-image-container">
+							<img src="tr.png" class="feature-image" alt="test" />
+						</div>
+
+						<h3>Official Certificates</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+							praesentium corrupti illum sint quas, rerum veritatis dolor minima
+							delectus maiores tenetur vero at
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="feature-name">
+						<img src="sci.png" class="feature-image" alt="test" />
+						<h3>Scientific Methods</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+							praesentium corrupti illum sint quas, rerum veritatis dolor minima
+							delectus maiores tenetur vero at
+						</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="feature-name">
+						<img src="au.png" class="feature-image" alt="test" />
+						<h3>Multi-device development</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+							praesentium corrupti illum sint quas, rerum veritatis dolor minima
+							delectus maiores tenetur vero at
+						</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="feature-name">
+						<img src="pr.png" class="feature-image" alt="test" />
+						<h3>Useful advices</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+							praesentium corrupti illum sint quas, rerum veritatis dolor minima
+							delectus maiores tenetur vero at
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="courses" class="courses-container">
+			<div class="courses-header">
+				<h1>Courses</h1>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="courses-col">
+						<img src="notepad.png" class="course-card-image" alt="Vlad" />
+						<div class="courses-text">
+							<div class="courses-info">
+								<h4 class="courses-title">Web Design</h4>
+								<p class="courses-discription">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+									praesentium corrupti
+								</p>
+							</div>
+							<div class="courses-graphic">
+								<div class="courses-time">
+									<h5 class="courses-time-title">Time : 3 pm</h5>
+								</div>
+								<div class="courses-teacher">
+									<h5 class="courses-teacher-name">Teacher : Ressie Rottman</h5>
+								</div>
+							</div>
+							<div class="courses-button">
+								<a
+									href="https://t.me/debian_di"
+									class="btn button-inner btn-success mx-auto"
+									target="_blank"
+									>Join Now</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="courses-col">
+						<img src="photo.png" class="course-card-image" alt="Vlad" />
+						<div class="courses-text">
+							<div class="courses-info">
+								<h4 class="courses-title">Photography</h4>
+								<p class="courses-discription">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+									praesentium corrupti
+								</p>
+							</div>
+							<div class="courses-graphic">
+								<div class="courses-time">
+									<h5 class="courses-time-title">Time : 6 pm</h5>
+								</div>
+								<div class="courses-teacher">
+									<h5 class="courses-teacher-name">Teacher : Floyd Fukuda</h5>
+								</div>
+							</div>
+							<div class="courses-button">
+								<a
+									href="https://t.me/debian_di"
+									class="btn button-inner btn-success mx-auto"
+									target="_blank"
+									>Join Now</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="courses-col">
+						<img src="watch.png" class="course-card-image" alt="Vlad" />
+						<div class="courses-text">
+							<div class="courses-info">
+								<h4 class="courses-title">Digital Marketing</h4>
+								<p class="courses-discription">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+									praesentium corrupti
+								</p>
+							</div>
+							<div class="courses-graphic">
+								<div class="courses-time">
+									<h5 class="courses-time-title">Time : 10 am</h5>
+								</div>
+								<div class="courses-teacher">
+									<h5 class="courses-teacher-name">Teacher : Elena Cully</h5>
+								</div>
+							</div>
+							<div class="courses-button">
+								<a
+									href="https://t.me/debian_di"
+									class="btn button-inner btn-success"
+									target="_blank"
+									>Join Now</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="more-courses">
+				<a href="https://t.me/debian_di">
+					<h5 class="more-courses-header">View all</h5>
+				</a>
+			</div>
+		</div>
+
+		<!-- <div id="teachers" class="teachers-container">
+			<div class="teachers-header">
+				<h1>Our Teachers</h1>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="teacher-container">
+						<div class="row teacher-info">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+								<div class="teacher-photo-container">
+									<img src="photo1.png" class="teacher-photo" alt="teacher" />
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-8">
+								<div class="teacher-name-container">
+									<h4 class="teacher-name">Velvet Vachon</h4>
+									<h5 class="teacher-post">Design Head</h5>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+								<div class="teacher-photo-container">
+									<img src="photo4.png" class="teacher-photo" alt="teacher" />
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-8">
+								<div class="teacher-name-container">
+									<h4 class="teacher-name">Floyd Fukuda</h4>
+									<h5 class="teacher-post">Marketing HOD</h5>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+								<div class="teacher-photo-container">
+									<img src="photo7.png" class="teacher-photo" alt="teacher" />
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-8">
+								<div class="teacher-name-container">
+									<h4 class="teacher-name">Ressie Rottman</h4>
+									<h5 class="teacher-post">Design Head</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="teacher-container">
+						<div class="row teacher-info">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+								<div class="teacher-photo-container">
+									<img src="photo2.png" class="teacher-photo" alt="teacher" />
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-8">
+								<div class="teacher-name-container">
+									<h4 class="teacher-name">Arlene Anello</h4>
+									<h5 class="teacher-post">Seo Head</h5>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+								<div class="teacher-photo-container">
+									<img src="photo5.png" class="teacher-photo" alt="teacher" />
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-8">
+								<div class="teacher-name-container">
+									<h4 class="teacher-name">Elena Cully</h4>
+									<h5 class="teacher-post">Design Head</h5>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+								<div class="teacher-photo-container">
+									<img src="photo8.png" class="teacher-photo" alt="teacher" />
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-8">
+								<div class="teacher-name-container">
+									<h4 class="teacher-name">Reed Recio</h4>
+									<h5 class="teacher-post">Photography Head</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="teacher-container">
+						<div class="row teacher-info">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+								<div class="teacher-photo-container">
+									<img src="photo3.png" class="teacher-photo" alt="teacher" />
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-8">
+								<div class="teacher-name-container">
+									<h4 class="teacher-name">Benton Colley</h4>
+									<h5 class="teacher-post">Photography Head</h5>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+								<div class="teacher-photo-container">
+									<img src="photo6.png" class="teacher-photo" alt="teacher" />
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-8">
+								<div class="teacher-name-container">
+									<h4 class="teacher-name">Burton Brooke</h4>
+									<h5 class="teacher-post">Web Technologist</h5>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+								<div class="teacher-photo-container">
+									<img src="photo9.png" class="teacher-photo" alt="teacher" />
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-8">
+								<div class="teacher-name-container">
+									<h4 class="teacher-name">Nancee bluford</h4>
+									<h5 class="teacher-post">SEO Head</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<div id="programs-react"></div>
+
+		<!-- <div id="programs" class="programs-container">
+			<div class="programs-header">
+				<h1>Programs</h1>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+					<div class="program-name-container">
+						<img src="Rectangle55.png" class="program-image" alt="test" />
+						<div class="programs-discription">
+							<h4 class="programs-discription-header">Pre-college education</h4>
+							<p class="programs-discription-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="program-name-container">
+						<img src="Rectangle56.png" class="program-image" alt="test" />
+						<div class="programs-discription">
+							<h4 class="programs-discription-header">Middle School</h4>
+							<p class="programs-discription-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="program-name-container">
+						<img src="Rectangle57.png" class="program-image" alt="test" />
+						<div class="programs-discription">
+							<h4 class="programs-discription-header">High School</h4>
+							<p class="programs-discription-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="program-name-container">
+						<img src="Rectangle58.png" class="program-image" alt="test" />
+						<div class="programs-discription">
+							<h4 class="programs-discription-header">
+								International exchange
+							</h4>
+							<p class="programs-discription-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="program-name-container">
+						<img src="Rectangle59.png" class="program-image" alt="test" />
+						<div class="programs-discription">
+							<h4 class="programs-discription-header">Graduate programs</h4>
+							<p class="programs-discription-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="program-name-container">
+						<img src="Rectangle60.png" class="program-image" alt="test" />
+						<div class="programs-discription">
+							<h4 class="programs-discription-header">Home education</h4>
+							<p class="programs-discription-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- <div id="comments-react" class="comments-container"></div> -->
+
+		<!-- <div class="comments-container">
+			<div class="comments-header">
+				<h1>What client say</h1>
+			</div>
+			<div class="comments-photoes-container">
+				<div class="row justify-content-md-center">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-2">
+						<div class="comments-photo-container">
+							<img class="comments-photo" src="client0.png" alt="" />
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-2">
+						<div class="comments-photo-container">
+							<img class="comments-photo" src="client1.png" alt="" />
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-2">
+						<div class="comments-photo-container">
+							<img class="comments-photo" src="client2.png" alt="" />
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-2">
+						<div class="comments-photo-container">
+							<img class="comments-photo" src="client3.png" alt="" />
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-2">
+						<div class="comments-photo-container">
+							<img class="comments-photo" src="client4.png" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="comments-info">
+					<div class="comments-text">
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta,
+							itaque doloribus repellat sequi praesentium nulla ad dolores
+							adipisci in. Non cum atque quis aspernatur eius error aperiam
+							quaerat, optio quisquam!
+						</p>
+					</div>
+					<div class="comments-person">
+						<h2 class="comments-name">Jhon Doe</h2>
+						<h4 class="comments-post">SEO Head</h4>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- <div class="blog-container">
+			<div class="blog-header">
+				<h1>Blog</h1>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+					<div class="blog-col">
+						<img src="blog1.png" class="blog-card-image" alt="Vlad" />
+						<div class="blog-text">
+							<div class="blog-info">
+								<h4 class="blog-title">How to use music in education</h4>
+								<p class="blog-discription">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+									praesentium corrupti
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+					<div class="blog-col">
+						<img src="blog2.png" class="blog-card-image" alt="Vlad" />
+						<div class="blog-text">
+							<div class="blog-info">
+								<h4 class="blog-title">Education with technologies</h4>
+								<p class="blog-discription">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+									praesentium corrupti
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+					<div class="blog-col">
+						<img src="blog3.png" class="blog-card-image" alt="Vlad" />
+						<div class="blog-text">
+							<div class="blog-info">
+								<h4 class="blog-title">Turning goals into reality</h4>
+								<p class="blog-discription">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+									praesentium corrupti
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+					<div class="blog-col">
+						<img src="blog4.png" class="blog-card-image" alt="Vlad" />
+						<div class="blog-text">
+							<div class="blog-info">
+								<h4 class="blog-title">The nation into education</h4>
+								<p class="blog-discription">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+									praesentium corrupti
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="blog-button mx-auto">
+					<a
+						href="https://t.me/debian_di"
+						class="btn blog-button-inner btn-success"
+						target="_blank"
+						>Read more</a
+					>
+				</div>
+			</div>
+		</div> -->
+
+		<div class="end-container" id="contact">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-7">
+					<div class="end-text">
+						<h1>Subscribe to our newsletter</h1>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-3">
+					<div class="end-connect">
+						<input
+							type="email"
+							class="form-control end-form-control"
+							id="colFormLabel"
+							placeholder="Email"
+						/>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-2">
+					<div class="end-button">
+						<button type="submit" class="btn btn-success">Sign Up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact-container">
+			<div class="contact-header">
+				<h1>Contact</h1>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="contact-form">
+						<div class="contact-name">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Full Name"
+								aria-label="Full Name"
+							/>
+						</div>
+						<div class="contact-mail">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="E-mail"
+								aria-label="E-mail"
+							/>
+						</div>
+						<div class="contact-message">
+							<textarea
+								rows="4"
+								cols="20"
+								class="form-control contact-message-inner"
+								placeholder="Message"
+								aria-label="Message"
+							>
+								Message
+							</textarea
+							>
+						</div>
+						<div class="col-2">
+							<div class="contact-button">
+								<button type="submit" class="btn btn-success">Send</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="contact-map-container">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d835.4056259823367!2d30.48095985771885!3d50.463428698801124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce79b12f4319%3A0xa14f8ff1e0933e0c!2z0LLRg9C70LjRhtGPINCu0YDRltGPINCG0LvQu9GU0L3QutCwLCA0LCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1659396662016!5m2!1suk!2sua"
+							width="100%"
+							height="325"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<div class="contact-location-image">
+								<img src="location.png" alt="location" />
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="contact-mail-image">
+								<img src="message.png" alt="location" />
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="contact-phone-image">
+								<img src="phone.png" alt="location" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<div class="contact-location-text">
+								<p>Yuriy Illenka Street, 4, Kyiv</p>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="contact-mail-text">
+								<p>hello@gmail.com</p>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="contact-phone-text">
+								<p>+38099 111 22 33</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark navigation-bottom">
+			<a class="navbar-brand" href="#"
+				><img src="logo.PNG" alt="logo" />EDUCATION</a
+			>
+
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link active" aria-current="page" href="#home">Home</a>
+				</li>
+				<li class="navbar-item">
+					<a class="nav-link" href="#education">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#courses">Courses</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#teachers">Teachers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#programs">Programs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</body>
 </html>
