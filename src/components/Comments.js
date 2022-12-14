@@ -1,7 +1,7 @@
 
 import { useState, useRef } from "react";
 import React from "react";
-
+import UnifiedHeader from "./UnifiedHeader";
 const comments = [
 	{
 		name: "Michael Source",
@@ -30,13 +30,7 @@ const comments = [
 	},
 ];
 
-function CommentsHeader() {
-	return (
-		<div className="comments-header">
-			<h1>What client say</h1>
-		</div>
-	);
-}
+
 
 function CommentsBodyContainer() {
 	let [chosenComment, makeChoise] = useState(2);
@@ -107,7 +101,7 @@ function CommentsImage(props) {
 function Comments() {
 	return (
 		<div id="comments" className="comments-container">
-			<CommentsHeader />
+			<UnifiedHeader header={"What client say"}/>
 			<CommentsBodyContainer />
 		</div>
 	);

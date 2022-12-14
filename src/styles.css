@@ -8,6 +8,11 @@ body {
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.unified-header{
+	text-align: center;
+	padding: 1rem 0 2rem 0;
+}
+
 .navbar-nav {
 	flex-direction: column;
 	font-size: medium;
@@ -95,23 +100,20 @@ body {
 	/* text-size-adjust: 300%; */
 	background-color: white;
 }
-.courses-header {
-	text-align: center;
-	padding: 1rem 0 2rem 0;
-}
+
 .courses-col {
 	background-color: rgb(189, 188, 187);
 	margin: 0 0 5% 0;
+	padding: 0 0 3% 0 ;
+	height:35%;
 }
 .courses-text {
 	padding-bottom: 2.2rem;
 }
-.courses-col h5 {
+.courses-col h5,h4 {
 	font-weight: bolder;
 }
-.courses-col h4 {
-	font-weight: bolder;
-}
+
 
 .course-card-image {
 	width: 100%;
@@ -125,7 +127,7 @@ body {
 	border-bottom: 3px solid #5c5e5e;
 	border-bottom-width: 100%;
 }
-.courses-graphic {
+.courses-schedule {
 	text-align: center;
 }
 
@@ -168,10 +170,7 @@ body {
 	text-align: left;
 }
 
-.teachers-header {
-	text-align: center;
-	padding: 1rem 0 2rem 0;
-}
+
 .teacher-photo-container {
 	margin: 5% 0 5% 0;
 	
@@ -212,10 +211,7 @@ body {
 
 	background-color: white;
 }
-.programs-header {
-	text-align: center;
-	padding: 1rem 0 1.5rem 0;
-}
+
 .program-name-container {
 	position: relative;
 	text-align: center;
@@ -248,9 +244,7 @@ body {
 	background-color: rgb(246, 242, 238);
 	text-align: center;
 }
-.comments-header {
-	padding: 1rem 0 2rem 0;
-}
+
 
 .comments-body-container {
 	padding: 2.5rem;
@@ -285,9 +279,7 @@ body {
 	background-color: white;
 	text-align: center;
 }
-.blog-header {
-	padding: 1rem 0 1.5rem 0;
-}
+
 
 .blog-text {
 	padding-bottom: 2rem;

@@ -1,6 +1,6 @@
-
 import React from "react";
-
+import UnifiedHeader from "./UnifiedHeader";
+import { useState } from "react";
 const blogs = [
 	{
 		title: "Education during vacation",
@@ -23,14 +23,6 @@ const blogs = [
 		text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus",
 	},
 ];
-
-function BlogHeader() {
-	return (
-		<div className="blog-header">
-			<h1>Blog</h1>
-		</div>
-	);
-}
 
 function BlogImage(props) {
 	return (
@@ -74,13 +66,19 @@ function showAdditionalBlog() {
 }
 
 function ButtonMoreBlogs() {
+	const [btnValue, setValue] = useState("Read more");
 	return (
 		<div className="blog-button mx-auto">
 			<button
 				className="btn blog-button-inner btn-success"
-				onClick={() => showAdditionalBlog()}
+				onClick={() => {
+					showAdditionalBlog();
+					setValue(() =>
+						btnValue === "Read more" ? "Read less" : "Read more"
+					);
+				}}
 			>
-				Read more
+				{btnValue}
 			</button>
 		</div>
 	);
@@ -90,7 +88,7 @@ export function Blog() {
 	return (
 		<React.Fragment>
 			<div id="blog-container" className="blog-container">
-				<BlogHeader />
+				<UnifiedHeader header={"Blog"} />
 				<div className="row">
 					<SingleBlog number={0} />
 					<SingleBlog number={1} />

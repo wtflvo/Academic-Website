@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-
+import UnifiedHeader from "./UnifiedHeader";
 const teachersData = [
 	{ name: "Nancee Bluford", post: "SEO Head" },
 	{ name: "Velvet Vachon", post: "Design Head" },
@@ -12,13 +12,7 @@ const teachersData = [
 	{ name: "Burton Brooke", post: "Web Technologist" },
 ];
 
-function TeachersHeader() {
-	return (
-		<div class="teachers-header">
-			<h1>Our Teachers</h1>
-		</div>
-	);
-}
+
 
 function TeachersImage() {
 	const number = useContext(NumbersContext);
@@ -125,7 +119,7 @@ function TeachersData() {
 export function Teachers() {
 	return (
 		<div id="teachers" className="teachers-container">
-			<TeachersHeader />
+			<UnifiedHeader header={"Our Teachers"} />
 			<TeachersData />
 		</div>
 	);

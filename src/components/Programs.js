@@ -1,7 +1,7 @@
 
 
 import React from "react";
-
+import UnifiedHeader from "./UnifiedHeader";
 const programsText = [
 	{
 		header: "Pre-college education",
@@ -84,7 +84,7 @@ export function Programs() {
 	return (
 		<React.Fragment>
 			<div id="programs" className="programs-container">
-				<ProgramsHeader />
+				<UnifiedHeader header={"Programs"} />
 				<div className="row">
 					<SingleProgramContainer number={0} />
 					<SingleProgramContainer number={1} />
