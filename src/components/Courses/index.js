@@ -1,23 +1,8 @@
 import React, { useContext } from "react";
-import UnifiedHeader from "./UnifiedHeader";
+import UnifiedHeader from "../Unified Header";
+import { coursesData } from "../../constants";
 
-const coursesData = [
-	{
-		title: "Web Design",
-		time: "Time : 3 pm",
-		teacher: "Teacher : Ressie Rottman",
-	},
-	{
-		title: "Photography",
-		time: "Time : 6 pm",
-		teacher: "Teacher : Floyd Fukuda",
-	},
-	{
-		title: "Digital Marketing",
-		time: "Time : 10 am",
-		teacher: "Teacher : Elena Cully",
-	},
-];
+
 const CourseContext = React.createContext(0);
 function CoursesImage() {
 	const value = useContext(CourseContext);
@@ -124,5 +109,3 @@ export function Courses() {
 		</div>
 	);
 }
-
-

@@ -1,35 +1,7 @@
-
 import { useState, useRef } from "react";
 import React from "react";
-import UnifiedHeader from "./UnifiedHeader";
-const comments = [
-	{
-		name: "Michael Source",
-		post: "School Teacher",
-		text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-	},
-	{
-		name: "Quentine Torres",
-		post: "Manager",
-		text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
-	},
-	{
-		name: "Jhon Doe",
-		post: "SEO Head",
-		text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, itaque doloribus repellat sequi praesentium nulla ad dolores adipisci in. Non cum atque quis aspernatur eius error aperiam quaerat, optio quisquam!",
-	},
-	{
-		name: "Paul Mendel",
-		post: "SMM",
-		text: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur",
-	},
-	{
-		name: "Alex Merser",
-		post: "Art-director",
-		text: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur",
-	},
-];
-
+import UnifiedHeader from "../Unified Header";
+import { comments } from "../../constants";
 
 
 function CommentsBodyContainer() {
@@ -101,7 +73,7 @@ function CommentsImage(props) {
 function Comments() {
 	return (
 		<div id="comments" className="comments-container">
-			<UnifiedHeader header={"What client say"}/>
+			<UnifiedHeader header={"What client say"} />
 			<CommentsBodyContainer />
 		</div>
 	);

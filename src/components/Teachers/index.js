@@ -1,17 +1,6 @@
 import React, { useContext } from "react";
-import UnifiedHeader from "./UnifiedHeader";
-const teachersData = [
-	{ name: "Nancee Bluford", post: "SEO Head" },
-	{ name: "Velvet Vachon", post: "Design Head" },
-	{ name: "Floyd Fukuda", post: "Marketing HOD" },
-	{ name: "Ressie Rottman", post: "Design Head" },
-	{ name: "Arlene Anello", post: "Seo Head" },
-	{ name: "Elena Cully", post: "Design Head" },
-	{ name: "Reed Recio", post: "Photography Head" },
-	{ name: "Benton Colley", post: "Photography Head" },
-	{ name: "Burton Brooke", post: "Web Technologist" },
-];
-
+import UnifiedHeader from "../Unified Header";
+import { teachersData } from "../../constants";
 
 
 function TeachersImage() {

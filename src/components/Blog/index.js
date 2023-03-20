@@ -1,28 +1,8 @@
 import React from "react";
-import UnifiedHeader from "./UnifiedHeader";
+import UnifiedHeader from "../Unified Header";
 import { useState } from "react";
-const blogs = [
-	{
-		title: "Education during vacation",
-		text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id praesentium corrupti",
-	},
-	{
-		title: "How to use music in education",
-		text: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis",
-	},
-	{
-		title: "Education with technologies",
-		text: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse",
-	},
-	{
-		title: "Turning goals into reality",
-		text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium",
-	},
-	{
-		title: "The nation into education",
-		text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus",
-	},
-];
+import { blogs } from "../../constants";
+
 
 function BlogImage(props) {
 	return (
